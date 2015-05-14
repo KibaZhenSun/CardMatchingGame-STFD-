@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BACCA4321B051944001F3754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BACCA4311B051944001F3754 /* main.m */; };
+		BACCA4351B051944001F3754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BACCA4341B051944001F3754 /* AppDelegate.m */; };
+		BACCA4381B051944001F3754 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BACCA4371B051944001F3754 /* ViewController.m */; };
+		BACCA43B1B051944001F3754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACCA4391B051944001F3754 /* Main.storyboard */; };
+		BACCA43D1B051944001F3754 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACCA43C1B051944001F3754 /* Images.xcassets */; };
+		BACCA4401B051944001F3754 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACCA43E1B051944001F3754 /* LaunchScreen.xib */; };
+		BACCA44C1B051944001F3754 /* Card_Matching_GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACCA44B1B051944001F3754 /* Card_Matching_GameTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BACCA4461B051944001F3754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BACCA4241B051944001F3754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BACCA42B1B051944001F3754;
+			remoteInfo = "Card Matching Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BACCA42C1B051944001F3754 /* Card Matching Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Card Matching Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACCA4301B051944001F3754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACCA4311B051944001F3754 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BACCA4331B051944001F3754 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BACCA4341B051944001F3754 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BACCA4361B051944001F3754 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BACCA4371B051944001F3754 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BACCA43A1B051944001F3754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BACCA43C1B051944001F3754 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BACCA43F1B051944001F3754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BACCA4451B051944001F3754 /* Card Matching GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Card Matching GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACCA44A1B051944001F3754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACCA44B1B051944001F3754 /* Card_Matching_GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card_Matching_GameTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BACCA4291B051944001F3754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACCA4421B051944001F3754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BACCA4231B051944001F3754 = {
+			isa = PBXGroup;
+			children = (
+				BACCA42E1B051944001F3754 /* Card Matching Game */,
+				BACCA4481B051944001F3754 /* Card Matching GameTests */,
+				BACCA42D1B051944001F3754 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BACCA42D1B051944001F3754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BACCA42C1B051944001F3754 /* Card Matching Game.app */,
+				BACCA4451B051944001F3754 /* Card Matching GameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BACCA42E1B051944001F3754 /* Card Matching Game */ = {
+			isa = PBXGroup;
+			children = (
+				BACCA4331B051944001F3754 /* AppDelegate.h */,
+				BACCA4341B051944001F3754 /* AppDelegate.m */,
+				BACCA4361B051944001F3754 /* ViewController.h */,
+				BACCA4371B051944001F3754 /* ViewController.m */,
+				BACCA4391B051944001F3754 /* Main.storyboard */,
+				BACCA43C1B051944001F3754 /* Images.xcassets */,
+				BACCA43E1B051944001F3754 /* LaunchScreen.xib */,
+				BACCA42F1B051944001F3754 /* Supporting Files */,
+			);
+			path = "Card Matching Game";
+			sourceTree = "<group>";
+		};
+		BACCA42F1B051944001F3754 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BACCA4301B051944001F3754 /* Info.plist */,
+				BACCA4311B051944001F3754 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BACCA4481B051944001F3754 /* Card Matching GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				BACCA44B1B051944001F3754 /* Card_Matching_GameTests.m */,
+				BACCA4491B051944001F3754 /* Supporting Files */,
+			);
+			path = "Card Matching GameTests";
+			sourceTree = "<group>";
+		};
+		BACCA4491B051944001F3754 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BACCA44A1B051944001F3754 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BACCA42B1B051944001F3754 /* Card Matching Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACCA44F1B051944001F3754 /* Build configuration list for PBXNativeTarget "Card Matching Game" */;
+			buildPhases = (
+				BACCA4281B051944001F3754 /* Sources */,
+				BACCA4291B051944001F3754 /* Frameworks */,
+				BACCA42A1B051944001F3754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Card Matching Game";
+			productName = "Card Matching Game";
+			productReference = BACCA42C1B051944001F3754 /* Card Matching Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BACCA4441B051944001F3754 /* Card Matching GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACCA4521B051944001F3754 /* Build configuration list for PBXNativeTarget "Card Matching GameTests" */;
+			buildPhases = (
+				BACCA4411B051944001F3754 /* Sources */,
+				BACCA4421B051944001F3754 /* Frameworks */,
+				BACCA4431B051944001F3754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BACCA4471B051944001F3754 /* PBXTargetDependency */,
+			);
+			name = "Card Matching GameTests";
+			productName = "Card Matching GameTests";
+			productReference = BACCA4451B051944001F3754 /* Card Matching GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BACCA4241B051944001F3754 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Kiba Zhen Sun";
+				TargetAttributes = {
+					BACCA42B1B051944001F3754 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					BACCA4441B051944001F3754 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = BACCA42B1B051944001F3754;
+					};
+				};
+			};
+			buildConfigurationList = BACCA4271B051944001F3754 /* Build configuration list for PBXProject "Card Matching Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BACCA4231B051944001F3754;
+			productRefGroup = BACCA42D1B051944001F3754 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BACCA42B1B051944001F3754 /* Card Matching Game */,
+				BACCA4441B051944001F3754 /* Card Matching GameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BACCA42A1B051944001F3754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACCA43B1B051944001F3754 /* Main.storyboard in Resources */,
+				BACCA4401B051944001F3754 /* LaunchScreen.xib in Resources */,
+				BACCA43D1B051944001F3754 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACCA4431B051944001F3754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BACCA4281B051944001F3754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACCA4381B051944001F3754 /* ViewController.m in Sources */,
+				BACCA4351B051944001F3754 /* AppDelegate.m in Sources */,
+				BACCA4321B051944001F3754 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACCA4411B051944001F3754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACCA44C1B051944001F3754 /* Card_Matching_GameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BACCA4471B051944001F3754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BACCA42B1B051944001F3754 /* Card Matching Game */;
+			targetProxy = BACCA4461B051944001F3754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BACCA4391B051944001F3754 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BACCA43A1B051944001F3754 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BACCA43E1B051944001F3754 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BACCA43F1B051944001F3754 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BACCA44D1B051944001F3754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BACCA44E1B051944001F3754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BACCA4501B051944001F3754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Card Matching Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BACCA4511B051944001F3754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Card Matching Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BACCA4531B051944001F3754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Card Matching GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Card Matching Game.app/Card Matching Game";
+			};
+			name = Debug;
+		};
+		BACCA4541B051944001F3754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Card Matching GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Card Matching Game.app/Card Matching Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BACCA4271B051944001F3754 /* Build configuration list for PBXProject "Card Matching Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACCA44D1B051944001F3754 /* Debug */,
+				BACCA44E1B051944001F3754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACCA44F1B051944001F3754 /* Build configuration list for PBXNativeTarget "Card Matching Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACCA4501B051944001F3754 /* Debug */,
+				BACCA4511B051944001F3754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BACCA4521B051944001F3754 /* Build configuration list for PBXNativeTarget "Card Matching GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACCA4531B051944001F3754 /* Debug */,
+				BACCA4541B051944001F3754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BACCA4241B051944001F3754 /* Project object */;
+}
