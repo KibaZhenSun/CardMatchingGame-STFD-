@@ -16,6 +16,7 @@
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *modeSegment;
 
 @end
 
@@ -33,6 +34,11 @@
     return [[PlayingCardDeck alloc] init];
 }
 
+- (IBAction) touchRedealButton: (UIButton *)sender
+{
+    self.game = nil;
+    [self updateUI];
+}
 
 - (IBAction) touchCardButton: (UIButton *)sender
 {
