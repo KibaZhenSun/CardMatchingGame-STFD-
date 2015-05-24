@@ -24,8 +24,13 @@
 
 -(CardMatchingGame *) game
 {
-    if (!_game) _game = [[CardMatchingGame alloc] initWithCardCount: [self.cardButtons count]
-                                                          usingDeck: [self createDeck]];
+    if (!_game)
+    {
+        _game = [[CardMatchingGame alloc] initWithCardCount: [self.cardButtons count]
+                                                  usingDeck: [self createDeck]];
+        [self changeModeSegment: self.modeSegment];
+    }
+    
     return _game;
 }
 
@@ -45,6 +50,12 @@
     NSUInteger chosenButtonIndex = [self.cardButtons indexOfObject: sender];
     [self.game chooseCardAtIndex: chosenButtonIndex];
     [self updateUI];
+}
+
+- (IBAction)changeModeSegment: (UISegmentedControl *)sender
+{
+    self.game.maxMatchingCards = (sender.selectedSegmentIndex == 0) ? 2 : 3;
+    // NSLog(@"Selected: %lu", (unsigned long)self.game.maxMatchingCards);
 }
 
 -(void) updateUI

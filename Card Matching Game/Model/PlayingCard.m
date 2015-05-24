@@ -13,19 +13,28 @@
 -(int) match: (NSArray *)otherCards
 {
     int score = 0;
+    int otherCardsCount = (int)[otherCards count];
     
-    if ([otherCards count] == 1)
+    if (otherCardsCount)
     {
-        PlayingCard *otherCard = [otherCards firstObject];
-        
-        if (otherCard.rank == self.rank)
+        for (Card *card in otherCards)
         {
-            score = 4;
+            PlayingCard *otherCard = (PlayingCard *)card;
+            if (otherCard.rank == self.rank)
+            {
+                score = 4;
+            }
+            else if ([otherCard.suit isEqualToString: self.suit])
+            {
+                score = 1;
+            }
         }
-        else if ([otherCard.suit isEqualToString: self.suit])
-        {
-            score = 1;
-        }
+    }
+    
+    if (otherCardsCount > 1)
+    {
+        score += [[otherCards firstObject] match: [otherCards subarrayWithRange:
+                                                   NSMakeRange(1,  otherCardsCount - 1)]];
     }
     
     return score;

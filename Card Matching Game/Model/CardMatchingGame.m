@@ -23,6 +23,12 @@
     return _cards;
 }
 
+-(NSUInteger) maxMatchingCards
+{
+    if (_maxMatchingCards < 2) _maxMatchingCards = 2;
+    return _maxMatchingCards;
+}
+
 -(instancetype) initWithCardCount: (NSUInteger)count
                         usingDeck: (Deck *)deck
 {
@@ -70,24 +76,35 @@ static const int COST_TO_CHOOSE = 1;
         }
         else
         {
+            NSMutableArray *otherCards = [[NSMutableArray alloc] init];
             for (Card *otherCard in self.cards)
             {
                 if (otherCard.isChosen && !otherCard.isMatched)
                 {
-                    int matchScore = [card match: @[otherCard]];
-                    
-                    if (matchScore)
+                    [otherCards addObject: otherCard];
+                }
+            }
+
+            if ([otherCards count] + 1 == self.maxMatchingCards)
+            {
+                int matchScore = [card match: otherCards];
+                
+                if (matchScore)
+                {
+                    self.score += matchScore * MATCH_BONUS;
+                    card.matched = YES;
+                    for (Card *otherCard in otherCards)
                     {
-                        self.score += matchScore * MATCH_BONUS;
-                        card.matched = YES;
                         otherCard.matched = YES;
                     }
-                    else
+                }
+                else
+                {
+                    self.score -= MISMATCH_PENALTY;
+                    for (Card *otherCard in otherCards)
                     {
-                        self.score -= MISMATCH_PENALTY;
                         otherCard.chosen = NO;
                     }
-                    break;
                 }
             }
             self.score -= COST_TO_CHOOSE;
