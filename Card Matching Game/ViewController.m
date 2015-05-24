@@ -45,6 +45,7 @@
     self.game = nil;
     self.modeSegment.enabled = YES;
     [self updateUI];
+    self.statusLabel.text = @"Game Restarted.";
 }
 
 - (IBAction) touchCardButton: (UIButton *)sender
@@ -65,13 +66,10 @@
 
 -(void) updateUI
 {
-    int chosenCardCount = 1;
-    
     for (UIButton *cardButton in self.cardButtons)
     {
         NSUInteger cardButtonIndex = [self.cardButtons indexOfObject: cardButton];
         Card *card = [self.game cardAtIndex: cardButtonIndex];
-        if (card.isChosen) chosenCardCount++;
         [cardButton setTitle: [self titleForCard: card] forState: UIControlStateNormal];
         [cardButton setBackgroundImage: [self backgroundImageForCard: card]
                               forState: UIControlStateNormal];
@@ -107,10 +105,7 @@
                            @"Don't Match. %ld points penalty.", (long)-self.game.lastScore];
         }
         
-        if (chosenCardCount == 1)
-            self.statusLabel.text = @"Status: Pre-Start.";
-        else
-            self.statusLabel.text = description;
+        self.statusLabel.text = description;
     }
 }
 
