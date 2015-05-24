@@ -154,7 +154,7 @@
 
 -(UIImage *) backgroundImageForCard: (Card *)card
 {
-    return [UIImage imageNamed: card.isChosen ? @"cardFront" : @"cardBack"];
+    return [UIImage imageNamed: card.isChosen ? @"cardFront" : @"dogeWithIt"];
 }
 
 @end
