@@ -483,7 +483,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="509" width="344" height="72"/>
+                                    <rect key="frame" x="16" y="491" width="344" height="72"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-l6-uS6">
@@ -498,6 +498,15 @@
                                     <rect key="frame" x="16" y="620" width="97" height="31"/>
                                 </variation>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="97x-qI-KcC">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="11" y="571" width="348" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="slideStatusSlider:" destination="vXZ-lx-hvc" eventType="valueChanged" id="91q-sW-HR1"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
@@ -537,6 +546,7 @@
                                 <exclude reference="0sd-ui-LLY"/>
                                 <exclude reference="LvL-h3-yon"/>
                                 <exclude reference="y5w-l6-uS6"/>
+                                <exclude reference="97x-qI-KcC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -579,12 +589,14 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="LvL-h3-yon"/>
+                                <include reference="97x-qI-KcC"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="modeSegment" destination="0sd-ui-LLY" id="QgF-5f-co6"/>
                         <outlet property="scoreLabel" destination="y5w-l6-uS6" id="Bt1-Kh-d01"/>
+                        <outlet property="statusHistorySlider" destination="97x-qI-KcC" id="4Pl-5K-HVS"/>
                         <outlet property="statusLabel" destination="LvL-h3-yon" id="Vof-jp-Gnx"/>
                         <outletCollection property="cardButtons" destination="IcP-ZV-EWh" id="aL8-44-0kt"/>
                         <outletCollection property="cardButtons" destination="Zq1-Fe-j4X" id="IZ0-7G-DWN"/>

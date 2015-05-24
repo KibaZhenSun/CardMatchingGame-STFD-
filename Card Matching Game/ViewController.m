@@ -18,10 +18,18 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *modeSegment;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property (strong, nonatomic) NSMutableArray *statusHistory;
+@property (weak, nonatomic) IBOutlet UISlider *statusHistorySlider;
 
 @end
 
 @implementation ViewController
+
+-(NSMutableArray *) statusHistory
+{
+    if (!_statusHistory) _statusHistory = [[NSMutableArray alloc] init];
+    return _statusHistory;
+}
 
 -(CardMatchingGame *) game
 {
@@ -43,6 +51,7 @@
 - (IBAction) touchRedealButton: (UIButton *)sender
 {
     self.game = nil;
+    self.statusHistory = nil;
     self.modeSegment.enabled = YES;
     [self updateUI];
     self.statusLabel.text = @"Game Restarted.";
@@ -62,6 +71,20 @@
     self.statusLabel.text = [NSString stringWithFormat: @"Changed to %lu-Cards Matching Mode.",
                              (unsigned long)self.game.maxMatchingCards];
     // NSLog(@"Selected: %lu", (unsigned long)self.game.maxMatchingCards);
+}
+
+- (IBAction)slideStatusSlider:(UISlider *)sender
+{
+    int sliderValue;
+    sliderValue = roundf(self.statusHistorySlider.value);
+    [self.statusHistorySlider setValue: sliderValue animated: NO];
+    
+    if ([self.statusHistory count])
+    {
+        self.statusLabel.alpha =
+                                (sliderValue + 1 < [self.statusHistory count]) ? 0.6 : 1;
+        self.statusLabel.text = [self.statusHistory objectAtIndex: sliderValue];
+    }
 }
 
 -(void) updateUI
@@ -106,7 +129,22 @@
         }
         
         self.statusLabel.text = description;
+        self.statusLabel.alpha = 1;
+        
+        if (![self.statusLabel.text isEqualToString: @""] &&
+            ![[self.statusHistory lastObject] isEqualToString: description])
+        {
+            [self.statusHistory addObject: description];
+            [self setStatusSliderRange];
+        }
     }
+}
+
+-(void) setStatusSliderRange
+{
+    int maxValue = (int)[self.statusHistory count] - 1;
+    self.statusHistorySlider.maximumValue = maxValue;
+    [self.statusHistorySlider setValue: maxValue animated: YES];
 }
 
 -(NSString *) titleForCard: (Card *)card
