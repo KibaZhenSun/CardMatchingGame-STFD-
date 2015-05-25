@@ -17,16 +17,19 @@
     
     if (otherCardsCount)
     {
-        for (Card *card in otherCards)
+        for (id card in otherCards)
         {
-            PlayingCard *otherCard = (PlayingCard *)card;
-            if (otherCard.rank == self.rank)
+            if ([card isKindOfClass: [PlayingCard class]])
             {
-                score += 4;
-            }
-            else if ([otherCard.suit isEqualToString: self.suit])
-            {
-                score += 1;
+                PlayingCard *otherCard = (PlayingCard *)card;
+                if (otherCard.rank == self.rank)
+                {
+                    score += 4;
+                }
+                else if ([otherCard.suit isEqualToString: self.suit])
+                {
+                    score += 1;
+                }
             }
         }
     }
