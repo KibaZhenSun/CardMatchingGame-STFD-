@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "PlayingCard.h"
-#import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
 
 @interface ViewController ()
@@ -43,9 +41,9 @@
     return _game;
 }
 
--(Deck *) createDeck
+-(Deck *) createDeck        // Abstract Class
 {
-    return [[PlayingCardDeck alloc] init];
+    return nil;
 }
 
 - (IBAction) touchRedealButton: (UIButton *)sender
@@ -73,7 +71,7 @@
     // NSLog(@"Selected: %lu", (unsigned long)self.game.maxMatchingCards);
 }
 
-- (IBAction)slideStatusSlider:(UISlider *)sender
+- (IBAction)slideStatusSlider: (UISlider *)sender
 {
     int sliderValue;
     sliderValue = roundf(self.statusHistorySlider.value);

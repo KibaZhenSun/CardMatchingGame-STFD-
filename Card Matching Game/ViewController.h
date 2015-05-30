@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Deck.h"
 
 @interface ViewController : UIViewController
 
+// Must be implemented in subclasses
+-(Deck *) createDeck;        // Abstract
 
 @end
-
