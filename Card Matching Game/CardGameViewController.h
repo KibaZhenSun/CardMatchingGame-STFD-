@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CardGameViewController.h
 //  Card Matching Game
 //
 //  Created by Kiba on 5/14/15.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Deck.h"
 
-@interface ViewController : UIViewController
+@interface CardGameViewController : UIViewController
 
 // Must be implemented in subclasses
 -(Deck *) createDeck;        // Abstract

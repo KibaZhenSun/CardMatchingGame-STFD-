@@ -1,13 +1,13 @@
 //
-//  PlayCardGameViewController.h
+//  SetCardGameViewController.h
 //  Card Matching Game
 //
-//  Created by Kiba on 5/30/15.
+//  Created by Kiba on 6/2/15.
 //  Copyright (c) 2015 Kiba Zhen Sun. All rights reserved.
 //
 
 #import "CardGameViewController.h"
 
-@interface PlayCardGameViewController : CardGameViewController
+@interface SetCardGameViewController : CardGameViewController
 
 @end

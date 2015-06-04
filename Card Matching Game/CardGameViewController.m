@@ -1,15 +1,15 @@
 //
-//  ViewController.m
+//  CardGameViewController.m
 //  Card Matching Game
 //
 //  Created by Kiba on 5/14/15.
 //  Copyright (c) 2015 Kiba Zhen Sun. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CardGameViewController.h"
 #import "CardMatchingGame.h"
 
-@interface ViewController ()
+@interface CardGameViewController ()
 
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation ViewController
+@implementation CardGameViewController
 
 -(NSMutableArray *) statusHistory
 {

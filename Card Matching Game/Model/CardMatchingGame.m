@@ -27,7 +27,10 @@
 
 -(NSUInteger) maxMatchingCards
 {
-    if (_maxMatchingCards < 2) _maxMatchingCards = 2;
+    Card *card = [self.cards firstObject];
+    
+    if (_maxMatchingCards < card.numberOfMatchingCards)
+        _maxMatchingCards = card.numberOfMatchingCards;
     return _maxMatchingCards;
 }
 
