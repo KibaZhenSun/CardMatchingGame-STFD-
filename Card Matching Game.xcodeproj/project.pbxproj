@@ -138,9 +138,9 @@
 				BA7312961B1E70BE00C25FB1 /* SetCardGameViewController.m */,
 				BA8A79781B1A4D7B00BC2D80 /* PlayCardGameViewController.h */,
 				BA8A79791B1A4D7B00BC2D80 /* PlayCardGameViewController.m */,
-				BA6820311B0694AA00675C3A /* Model */,
 				BACCA43C1B051944001F3754 /* Images.xcassets */,
 				BACCA43E1B051944001F3754 /* LaunchScreen.xib */,
+				BA6820311B0694AA00675C3A /* Model */,
 				BACCA42F1B051944001F3754 /* Supporting Files */,
 			);
 			path = "Card Matching Game";

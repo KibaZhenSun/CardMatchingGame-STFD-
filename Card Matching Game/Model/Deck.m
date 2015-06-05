@@ -14,7 +14,6 @@
 
 @end
 
-
 @implementation Deck
 
 -(NSMutableArray *) cards

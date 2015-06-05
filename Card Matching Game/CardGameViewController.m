@@ -91,7 +91,7 @@
     {
         NSUInteger cardButtonIndex = [self.cardButtons indexOfObject: cardButton];
         Card *card = [self.game cardAtIndex: cardButtonIndex];
-        [cardButton setTitle: [self titleForCard: card] forState: UIControlStateNormal];
+        [cardButton setAttributedTitle: [self titleForCard: card] forState: UIControlStateNormal];
         [cardButton setBackgroundImage: [self backgroundImageForCard: card]
                               forState: UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
@@ -145,9 +145,10 @@
     [self.statusHistorySlider setValue: maxValue animated: YES];
 }
 
--(NSString *) titleForCard: (Card *)card
+-(NSAttributedString *) titleForCard: (Card *)card
 {
-    return card.isChosen ? card.contents : @"";
+    NSAttributedString *title = [[NSAttributedString alloc] initWithString: card.isChosen ? card.contents : @""];
+    return title;
 }
 
 -(UIImage *) backgroundImageForCard: (Card *)card
